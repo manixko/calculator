@@ -61,12 +61,12 @@ class Calculator(tk.Tk):
         for key in '0123456789':
             self.bind(f'<Key-{key}>', self.key_input)
         # Binding other keys
-        self.bind('<Key-+>', self.key_input)
-        self.bind('<Key-=>', self.key_input)
-        self.bind('<Key-->', self.key_input)
-        self.bind('<Key-*>', self.key_input)
-        self.bind('<Key-/>', self.key_input)
-        self.bind('<Key-.>', self.key_input)
+        self.bind('<Key-plus>', self.key_input)
+        self.bind('<Key-equal>', self.key_input)
+        self.bind('<Key-minus>', self.key_input)
+        self.bind('<Key-asterisk>', self.key_input)
+        self.bind('<Key-slash>', self.key_input)
+        self.bind('<Key-period>', self.key_input)  
         self.bind('<Return>', self.key_input)
         self.bind('<BackSpace>', self.key_input)
         self.bind('<Delete>', self.key_input)
